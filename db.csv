@@ -1,0 +1,7 @@
+"call_flag";"customer_number";"meter_number";"customer_name";"address";"contact_number";"email";"customer_type";"wallet_balance";"limit"
+0;"CA0000065";"314845";"Julian Klein";"12 Church Street";"812345678";"jk@gmail.com";"SPU";1750;1500
+1;"CA0000066";"876543";"Paul Joseph";"43 Klein road";"217584888";"pk@gmail.com";"LPU";0;20000
+1;"CA0000232";"345628";"Lilian Jarvis";"89 Olsen road";"219496448";"lj@gmail.com";"SPU";12500;20000
+2;"CA0000345";"878515";"Mike Ross";"212 Helen drive";"834484848";"mk@gmail.com";"LPU";912;60000
+2;"CA0000547";"345654";"Abraham Olsen";"32 Joseph street";"217584448";"ao@gmail.com";"SPU";200000;20000
+2;"CA0000876";"254815";"Helen Oliver";"50 Jarvis street";"217151484";"ho@gmail.com";"SPU";12;15000
