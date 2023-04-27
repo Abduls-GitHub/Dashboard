@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="grid-container">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+            <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+            <h1>Dashboard</h1>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <img class="logo" src="./syntellMediumLogo2.png">
+        <div class="sidebar-title">
+            <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">dashboard</span> Dashboard
+                </a>
+            </li>
+
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">account_balance_wallet</span>Wallet Balance
+                </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">notifications</span>Notification Grid
+                </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">campaign</span>Notify Customers
+                </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">warning</span>Disconnect Imminent
+                </a>
+            </li>
+
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">priority_high</span> Failed Meter Readings
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- End Sidebar -->
+
+    <!-- Main -->
+    <main class="main-container">
+
+
+        <div class="main-cards">
+
+            <div class="card" id="no-notifications-card">
+                <a href="#" target="_blank">
+                    <div class="card-inner">
+                        <h3>No Notifications</h3>
+                        <span class="material-icons-outlined"><!--fact_check--></span>
+                    </div>
+                    <h1>1500</h1>
+                </a>
+            </div>
+
+            <div class="card" id="notify-customer-card">
+                <a href="#" target="_blank">
+                    <div class="card-inner">
+                        <h3>Notify Customer</h3>
+                        <span class="material-icons-outlined"><!--terminal--></span>
+                    </div>
+                    <h1>249</h1>
+                </a>
+            </div>
+
+            <div class="card" id="disconnect-imminent-card">
+                <a href="#" target="_blank">
+                    <div class="card-inner">
+                        <h3>Disconnect Imminent</h3>
+                        <span class="material-icons-outlined"><!--groups--></span>
+                    </div>
+                    <h1>25</h1>
+                </a>
+            </div>
+
+            <div class="charts-card">
+                <h2 class="chart-title">Notifications</h2>
+                <div id="mini-chart"></div>
+            </div>
+
+
+        </div>
+
+        <!--Todo
+
+        Add in extra table remove chart
+        -->
+
+        <table class="content-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Birth Date</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Points</th>
+
+            </tr>
+            </thead>
+            <tbody id="table-body-customers">
+            <!-- Data will be inserted here dynamically using JavaScript -->
+            </tbody>
+        </table>
+
+        <h2 class="notification-grid-table-heading">Notification Grid</h2>
+
+        <table class="content-table">
+            <thead>
+            <tr>
+                <th>Call Flag</th>
+                <th>Customer Account Number</th>
+                <th>Meter Number</th>
+                <th>Customer Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Customer Type</th>
+                <th>Wallet Balance</th>
+                <th>Threshold</th>
+
+            </tr>
+            </thead>
+            <tbody id="table-body-meters-customers">
+            <!-- Data will be inserted here dynamically using JavaScript -->
+            </tbody>
+        </table>
+
+        <div class="button-container">
+            <button class="export-button">
+                Export Result
+            </button>
+        </div>
+
+
+    </main>
+    <!-- End Main -->
+
+</div>
+
+<!-- Scripts -->
+<!-- ApexCharts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+<!--Tables-->
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@6"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>
