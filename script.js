@@ -36,9 +36,9 @@ let barChartOptions = {
         },
     },
     colors: [
-        "#00BD35",
-        "#BD4413",
-        "#FF1919",
+        "#0FE600",
+        "#F5E302",
+        "#E6250B",
 
 
 

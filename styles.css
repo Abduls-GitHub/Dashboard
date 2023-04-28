@@ -77,7 +77,7 @@ body {
 }
 
 .sidebar-list-item {
-    padding: 20px 20px 20px 20px;
+    padding: 20px 0 20px 0;
     font-size: 18px;
 }
 
@@ -157,42 +157,42 @@ body {
 }
 
 #no-notifications-card h1{
-    color: #00BD35;
+    color: #0FE600;
 }
 
 #no-notifications-card h3{
-    color: #00BD35;
+    color: #0FE600;
 }
 
 .card:first-child {
     /*background-color: #00BD35;*/
-    border: 2px solid #00BD35;
+    border: 2px solid #0FE600;
 }
 
 #notify-customer-card h1{
-    color: #BD4413;
+    color: #F5E302;
 }
 
 #notify-customer-card h3{
-    color: #BD4413;
+    color: #F5E302;
 }
 
 .card:nth-child(2) {
     /*background-color: #BD4413;*/
-    border: 2px solid #BD4413;
+    border: 2px solid #F5E302;
 }
 
 #disconnect-imminent-card h1{
-    color: #FF1919;
+    color: #E6250B;
 }
 
 #disconnect-imminent-card h3{
-    color: #FF1919;
+    color: #E6250B;
 }
 
 .card:nth-child(3) {
     /*background-color: #FF1919;*/
-    border: 2px solid #FF1919;
+    border: 2px solid #E6250B;
 }
 
 
